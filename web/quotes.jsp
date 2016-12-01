@@ -14,14 +14,5 @@
 </head>
 <body>
 
-<%
-    QuoteDAO db = new QuoteDAO();
-    List<Quote> q = db.getAll();
-
-
-%>
-sdf
-<%for (int i = 0; i < q.size(); i++) {%><%=q.get(i).getQuote()%> by <%=q.get(i).getAuthor()%><%}%>
-
 </body>
 </html>
